@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fondoTarjeta">#FDF9B1</color>
+    <color name="fondoActivity">#E3E3E0</color>
+    <color name="btnCancelar">#F44336</color>
+    <color name="btnGuardar">#4CAF50</color>
+    <color name="btnNuevo">#03A9F4</color>
+    <color name="btnVolver">#A19F9D</color>
+    <color name="btnEditar">#8A00D4</color>
+    <color name="accionTarea">#EF0CAE</color>
+    <color name="nombreTarea">#3F51B5</color>
+</resources>

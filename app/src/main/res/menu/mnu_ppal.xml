@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnuNuevo"
+        android:title="@string/mnuNuevo" />
+
+    <item android:title="@string/mnuOrdenar">
+        <menu>
+            <item
+                android:id="@+id/mnuOrdCat"
+                android:title="@string/mnuOrdenarCategoria" />
+            <item
+                android:id="@+id/mnuOrdFch"
+                android:title="@string/mnuOrdenarFecha" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/mnuSalir"
+        android:title="@string/mnuSalir" />
+</menu>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoActivity"
+    tools:context=".view.EditActivity">
+
+    <TextView
+        android:id="@+id/txtAcctionTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/accionTarea"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTareaNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/hint_nombre_tarea"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAcctionTarea" />
+
+    <EditText
+        android:id="@+id/txtTareaFecha"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hint_fecha"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTareaNombre" />
+
+    <EditText
+        android:id="@+id/txtTareaHora"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hint_hora"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/btnTareaHora"
+        app:layout_constraintTop_toBottomOf="@+id/txtTareaNombre" />
+
+    <Button
+        android:id="@+id/btnTareaCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/btnCancelar"
+        android:text="@string/btn_cancelar"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTareaGuardar"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/btnGuardar"
+        android:text="@string/btn_guardar"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTareaFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calendar"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTareaFecha"
+        app:layout_constraintTop_toTopOf="@+id/txtTareaFecha" />
+
+    <ImageButton
+        android:id="@+id/btnTareaHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/timer"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTareaNombre" />
+
+    <TextView
+        android:id="@+id/tvCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/categoria"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/opcCategoriaBlq1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img0"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/opcCategoriaBlq1"
+        app:layout_constraintTop_toTopOf="@+id/opcCategoriaBlq1"
+        app:srcCompat="@drawable/cat_0" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/opcCategoriaBlq1"
+        app:layout_constraintTop_toTopOf="@+id/opcCategoriaBlq1"
+        app:srcCompat="@drawable/cat_1" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="@+id/opcCategoriaBlq1"
+        app:srcCompat="@drawable/cat_2" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/opcCategoriaBlq2"
+        app:layout_constraintTop_toTopOf="@+id/img0"
+        app:srcCompat="@drawable/cat_3" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/opcCategoriaBlq2"
+        app:layout_constraintTop_toTopOf="@+id/img1"
+        app:srcCompat="@drawable/cat_4" />
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/img4"
+        app:layout_constraintTop_toTopOf="@+id/img2"
+        app:srcCompat="@drawable/cat_5" />
+
+    <RadioGroup
+        android:id="@+id/opcCategoriaBlq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnTareaCancelar"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/opcCat0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_0" />
+
+        <RadioButton
+            android:id="@+id/opcCat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_1" />
+
+        <RadioButton
+            android:id="@+id/opcCat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_2" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/opcCategoriaBlq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/opcCategoriaBlq1"
+        app:layout_constraintTop_toTopOf="@+id/opcCategoriaBlq1">
+
+        <RadioButton
+            android:id="@+id/opcCat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_3" />
+
+        <RadioButton
+            android:id="@+id/opcCat4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_4" />
+
+        <RadioButton
+            android:id="@+id/opcCat5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_5" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtTareaDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_descripcion"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/tvCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTareaFecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnuInfo"
+        android:title="@string/mnuInfo" />
+
+    <item
+        android:id="@+id/mnuEdit"
+        android:title="@string/mnuEditar" />
+
+    <item
+        android:id="@+id/mnuBorrar"
+        android:title="@string/mnuBorrar" />
+</menu>
